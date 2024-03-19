@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ {{>headerLinks}}
+</head>
+<body>
+  {{>navbar}}
+
+  <div class="container">
+
+      <div class="input">
+        <form action="">
+          <input type="text" id="cityName" placeholder="Enter City Name">
+          <input type="submit" value="search" id="search_city">
+        </form>
+      </div>
+      <div class="main_content">
+          <div class="top_layer">
+            <p id="day"> Today</p>
+            {{!-- <p id="date"> Some Date</p> --}}
+          </div>
+          <div class="main_layer">
+            <p id="city_name">Get city name</p>
+            <div class="middle_layer data_hide">
+              <p id="temp"><span id="temp_val_K">0</span> <sup> 0</sup>K</p>
+              <p id="temp_status" ><i class="fa-solid fa-cloud"></i></i></p>
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+  {{>footer}}
+  <script src="js/main.js"></script>
+</body>
+</html>
